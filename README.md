@@ -16,7 +16,7 @@ bun dev
 
 ## Tripma Database Diagram
 
-![alt text](./images/ERD.png)
+![alt text](./images/Tripma_ERD.png)
 https://drawsql.app/teams/sherif-mohammed/diagrams/tripma-flight-booking-system
 
 ## Tripma API Documentation

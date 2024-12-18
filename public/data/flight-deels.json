@@ -4,27 +4,27 @@
     "title": "The Bund, Shanghai",
     "description": "China's most international city",
     "price": "$598",
-    "imageUrl": "../images/The-Bund-Shanghai.jpg"
+    "imageUrl": "/images/The-Bund-Shanghai.jpg"
   },
   {
     "id": 2,
     "title": "Sydney Opera House, Sydney",
     "description": "Take a stroll along the famous harbor",
     "price": "$981",
-    "imageUrl": "https://example.com/image2.jpg"
+    "imageUrl": "/images/Sydney-Opera-House-Sydney.jpg"
   },
   {
     "id": 3,
     "title": "Kōdai-ji Temple, Kyoto",
     "description": "Step back in time in the Gion district",
     "price": "$633",
-    "imageUrl": "https://example.com/image3.jpg"
+    "imageUrl": "/images/Kōdai-ji-Temple-Kyoto.jpg"
   },
   {
     "id": 4,
     "title": "Tsavo East National Park, Kenya",
     "description": "One of the oldest parks in Kenya, located in the semi-arid Taru Desert.",
     "price": "$1,248",
-    "imageUrl": "https://example.com/image4.jpg"
+    "imageUrl": "/images/Tsavo-East-National-Park.jpg"
   }
 ]

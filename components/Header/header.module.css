@@ -1,0 +1,46 @@
+.header {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 8px 24px;
+  background-color: #fff;
+  height: 96px;
+}
+.anchor {
+  text-decoration: none;
+  color: #000;
+  font-weight: 400;
+  font-size: 16px;
+  color: #7c8db0;
+}
+.navbar {
+  display: flex;
+  gap: 20px;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.signUpBtn {
+  display: inline-block;
+  /* box-sizing: border-box; */
+  border: none;
+  background-color: #605dec;
+  color: white;
+
+  padding: 12px 20px;
+
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 16px;
+  cursor: pointer;
+  height: 48px;
+  width: 95px;
+}

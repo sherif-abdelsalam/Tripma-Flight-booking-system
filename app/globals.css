@@ -1,6 +1,4 @@
-div {
-  text-align: center;
-  font-weight: bold;
-  font-size: 44px;
-  color: #333;
+* {
+  margin: 0;
+  padding: 0;
 }

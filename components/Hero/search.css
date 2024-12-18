@@ -1,0 +1,41 @@
+.search-bar {
+  box-sizing: border-box;
+  width: 70%;
+  background-color: #fff;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  border: 2px solid #cbd4e6;
+}
+.from-to {
+  width: 26%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-left: 16px;
+}
+.from-to .plane-icon {
+  width: 4%;
+}
+.from-to .from-to-selector {
+  width: 90%;
+}
+
+.options {
+  width: 100%; /* Adjust width */
+  padding: 10px; /* Inner spacing */
+  border: none;
+  background: none;
+  font-size: 18px; /* Text size */
+  cursor: pointer; /* Pointer on hover */
+  color: #7c8db0;
+}
+.divider {
+  height: 60px;
+  width: 2px;
+  background-color: #cbd4e6;
+  margin: 10px 0;
+}

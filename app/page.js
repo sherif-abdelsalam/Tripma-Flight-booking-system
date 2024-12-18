@@ -1,4 +1,11 @@
+import Hero from "@/components/Hero/hero";
+import Hotels from "@/components/Hotels/hotels";
+
 export default function Home() {
-  return <div> Tripma Staring Point</div>;
+  return (
+    <>
+      <Hero />
+      <Hotels />
+    </>
+  );
 }
-  

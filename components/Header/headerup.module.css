@@ -1,0 +1,26 @@
+.headerup {
+  box-sizing: border-box;
+  background-color: #605dec;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 64px;
+  padding: 16px 32px;
+
+  gap: 10px;
+}
+.content {
+  font-size: 18px;
+  color: white;
+  line-height: 24.55px;
+  flex-grow: 1;
+  text-align: center;
+  font-weight: 600;
+}
+
+.btn {
+  background: none;
+  border: none;
+}

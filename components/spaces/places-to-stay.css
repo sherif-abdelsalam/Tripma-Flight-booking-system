@@ -1,0 +1,40 @@
+.places-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.places-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.card {
+  flex-grow: 1;
+  flex-basis: 550px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+  background-color: #605dec;
+  cursor: pointer;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+.places-btn {
+  background: none;
+  border: none;
+  padding: 12px 20px;
+  font-size: 18px;
+  color: aliceblue;
+}
+.btn:hover {
+  background-color: #4b4b9e;
+}

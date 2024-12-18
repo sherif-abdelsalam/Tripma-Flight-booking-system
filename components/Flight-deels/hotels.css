@@ -1,0 +1,68 @@
+.hotels-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hotels-title {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.all-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.hotels-title p {
+  font-size: 24px;
+  color: #6e7491;
+  font-weight: 700;
+}
+.hotels-title span {
+  color: #605dec;
+}
+
+.flight-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.hotel-card {
+  flex-grow: 1;
+  flex-basis: 550px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.hotel-card-info {
+  padding: 15px;
+  display: flex;
+
+  flex-direction: column;
+  gap: 16px;
+}
+
+.hotel-card-title {
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  color: #6e7491;
+}
+
+.hotel-card-title .price {
+  color: #605dec;
+  font-weight: 700;
+}
+
+.hotel-card-description {
+  font-size: 16px;
+  color: #6e7491;
+  font-weight: 600;
+}

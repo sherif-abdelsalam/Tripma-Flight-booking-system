@@ -1,0 +1,20 @@
+.travelers-num {
+  display: flex;
+  gap: 16px;
+  margin-left: 16px;
+  align-items: center;
+}
+.traveller-btn {
+  background: none;
+  border: none;
+  color: #7c8db0;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 400;
+}
+.divider {
+  height: 60px;
+  width: 2px;
+  background-color: #cbd4e6;
+  margin: 10px 0;
+}

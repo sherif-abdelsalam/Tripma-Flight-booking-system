@@ -1,15 +1,38 @@
+"use client";
+
+import "./search.css";
+import { useState } from "react";
 import PlaneIcon from "../Icons/plane";
-import FromTo from "./search-from-to";
+import Calender from "./calender";
+import From from "./from";
+import To from "./to";
+// import Travellers from "./travelers";
 
 export default function Search() {
+  const [fromOption, setFromOption] = useState("");
+  const [toOption, setToOption] = useState("");
+  console.log(fromOption);
+  console.log(toOption);
+
   return (
     <div className="search-bar">
-      <FromTo placeHolder="From Where ?">
+      <From
+        fromOption={fromOption}
+        setFromOption={setFromOption}
+        placeHolder="From Where ?"
+      >
         <PlaneIcon />
-      </FromTo>
-      <FromTo placeHolder="To Where ?">
+      </From>
+
+      <To
+        toOption={toOption}
+        setToOption={setToOption}
+        placeHolder="To Where ?"
+      >
         <PlaneIcon />
-      </FromTo>
+      </To>
+      <Calender />
+      {/* <Travellers /> */}
     </div>
   );
 }

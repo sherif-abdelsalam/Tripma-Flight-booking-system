@@ -1,22 +1,18 @@
-"use client";
-import { useState } from "react";
-import "./search.css";
-export default function FromTo({ placeHolder, children }) {
+export default function TO({ toOption, setToOption, placeHolder, children }) {
   const options = ["SFO", "ATL", "LAX", "STL", "PVG", "MSP", "NRT"];
 
-  const [selectedOption, setSelectedOption] = useState(placeHolder);
-
-  const handelFromWHereOtion = (event) => {
-    setSelectedOption(event.target.value);
+  const handelOtion = (event) => {
+    setToOption(event.target.value);
   };
+
   return (
     <div className="from-to">
       <div className="plane-icon">{children}</div>
 
       <div className="from-to-selector">
         <select
-          value={selectedOption || placeHolder}
-          onChange={handelFromWHereOtion}
+          value={toOption || placeHolder}
+          onChange={handelOtion}
           className="options"
         >
           <option disabled>{placeHolder}</option>

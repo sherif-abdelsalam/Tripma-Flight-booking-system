@@ -1,11 +1,13 @@
 import Hero from "@/components/Hero/hero";
-import Hotels from "@/components/Hotels/hotels";
+import FlightDeels from "@/components/Flight-deels/flight-deels";
+import PlacesToStay from "@/components/spaces/places-stay";
 
 export default function Home() {
   return (
-    <>
+    <div className="home-page">
       <Hero />
-      <Hotels />
-    </>
+      <FlightDeels />
+      <PlacesToStay />
+    </div>
   );
 }

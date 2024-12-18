@@ -2,3 +2,9 @@
   margin: 0;
   padding: 0;
 }
+.home-page {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+  margin: 0 60px;
+}

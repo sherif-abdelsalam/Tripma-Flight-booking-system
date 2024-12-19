@@ -1,0 +1,51 @@
+.reviews-container {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+  padding: 44px;
+}
+.reviews {
+  margin: 0 60px;
+  display: flex;
+  gap: 120px;
+}
+
+.review-card {
+  flex-grow: 1;
+  display: flex;
+  gap: 16px;
+  padding: 20px;
+}
+
+.review-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.review-card .name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #6e7491;
+}
+
+.review-card .location {
+  font-size: 18px;
+  color: #6e7491;
+  font-weight: 400;
+}
+.review-card-content .description {
+  font-size: 18px;
+  color: #27273f;
+  font-weight: 400;
+}
+.rating {
+  display: flex;
+  gap: 2px;
+  margin-bottom: 16px;
+  margin-top: 6px;
+}
+.rating-star {
+  color: #605dec;
+  width: 18px;
+  height: 18px;
+}

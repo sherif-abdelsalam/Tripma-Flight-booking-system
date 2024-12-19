@@ -1,51 +1,34 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import DatePicker from "react-datepicker";
-import "./calender.css";
 import "react-datepicker/dist/react-datepicker.css";
+import DateIcon from "../Icons/date";
 
-const DepartureCalendar = () => {
-  const [selectedDate, setSelectedDate] = useState(null);
-  const [showCalendar, setShowCalendar] = useState(false);
+function Calender() {
+  const [startDate, setStartDate] = useState(null);
+  const [endDate, setEndDate] = useState(null);
 
-  const formatDate = (date) =>
-    date
-      ? date.toLocaleDateString("en-US", {
-          month: "short",
-          day: "numeric",
-          year: "numeric",
-        })
-      : "Departure Time";
+  const handleDateChange = (dates) => {
+    const [start, end] = dates; // Destructure start and end dates
+    setStartDate(start);
+    setEndDate(end);
+  };
 
   return (
-    <div className="calendar-container">
-      <button
-        className="calendar-toggle"
-        onClick={() => setShowCalendar((prev) => !prev)}
-      >
-        {selectedDate ? formatDate(selectedDate) : "Departure Time"}
-      </button>
+    <>
+      <DateIcon />
 
-      {/* DatePicker Component */}
-      {showCalendar && (
-        <div className="calendar-popup">
-          <DatePicker
-            selected={selectedDate}
-            onChange={(date) => {
-              setSelectedDate(date);
-              setShowCalendar(false);
-            }}
-            inline
-            calendarClassName="custom-calendar" // Custom calendar styling
-            dayClassName={(date) =>
-              date.getDay() === 0 || date.getDay() === 6
-                ? "highlight-weekend"
-                : ""
-            } // Highlight weekends
-          />
-        </div>
-      )}
-    </div>
+      <DatePicker
+        selected={(startDate, endDate)}
+        onChange={handleDateChange}
+        startDate={startDate}
+        endDate={endDate}
+        selectsRange // Enables range selection
+        monthsShown={2} // Display two months side by side
+        placeholderText="Departure - Return" // Placeholder when no dates are selected
+      />
+      <div className="divider"></div>
+    </>
   );
-};
+}
 
-export default DepartureCalendar;
+export default Calender;

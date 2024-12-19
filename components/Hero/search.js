@@ -6,7 +6,7 @@ import PlaneIcon from "../Icons/plane";
 import Calender from "./calender";
 import From from "./from";
 import To from "./to";
-// import Travellers from "./travelers";
+import Travellers from "./travelers";
 
 export default function Search() {
   const [fromOption, setFromOption] = useState("");
@@ -32,7 +32,8 @@ export default function Search() {
         <PlaneIcon />
       </To>
       <Calender />
-      {/* <Travellers /> */}
+      <Travellers />
+      <button className="search-btn">Search</button>
     </div>
   );
 }

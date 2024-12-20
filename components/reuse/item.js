@@ -6,15 +6,8 @@ export default function CardItem({ color, card }) {
   const title = title_splitted.slice(0, title_splitted.length - 1).join(" ");
   return (
     <>
-      <div>
-        <Image
-          src={card.imageUrl}
-          alt={card.title}
-          width={600}
-          height={400}
-          loading="lazy"
-          layout="responsive"
-        />
+      <div style={{ position: "relative", width: "100%", height: "500px" }}>
+        <Image src={card.imageUrl} alt={card.title} loading="lazy" fill />
       </div>
       <div className="hotel-card-info">
         <div className="hotel-card-title">

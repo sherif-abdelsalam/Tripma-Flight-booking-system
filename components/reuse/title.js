@@ -1,13 +1,15 @@
 import Arrow from "../Icons/arrow->";
 
-export function Title({ children }) {
+export function Title({ showArrow, children }) {
   return (
-    <div className="hotels-title">
+    <div className={showArrow ? "cards-title" : "cards-title-no-arrow"}>
       <p>{children}</p>
-      <div className="all-arrow">
-        <p>All</p>
-        <Arrow />
-      </div>
+      {showArrow && (
+        <div className="all-arrow">
+          <p>All</p>
+          <Arrow />
+        </div>
+      )}
     </div>
   );
 }

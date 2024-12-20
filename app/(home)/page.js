@@ -1,13 +1,15 @@
 import Hero from "@/components/Hero/hero";
 import FlightDeels from "@/components/Flight-deels/flight-deels";
 import PlacesToStay from "@/components/spaces/places-stay";
+import Review from "@/components/Reviews/review";
 
 export default function Home() {
   return (
-    <div className="home-page">
+    <main className="home-page">
       <Hero />
       <FlightDeels />
       <PlacesToStay />
-    </div>
+      <Review />
+    </main>
   );
 }

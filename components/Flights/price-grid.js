@@ -1,7 +1,6 @@
 import Image from "next/image";
 import "./priceGrid.css";
 import price_history from "@/public/images/price_history.png";
-import { AreaChartHero } from "./chart";
 
 export default function PriceGrid() {
   const dates = ["2/12", "2/13", "2/14", "2/15", "2/16"];
@@ -41,7 +40,7 @@ export default function PriceGrid() {
         </table>
       </div>
       <div className="price-history">
-        <Image src={price_history} alt="Price History" width={460} />
+        {/* <Image src={price_history} alt="Price History" width={460} /> */}
         {/* <AreaChartHero /> */}
       </div>
     </div>

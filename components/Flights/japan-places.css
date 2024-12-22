@@ -1,0 +1,22 @@
+.places-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.places-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.card {
+  flex-grow: 1;
+  flex-basis: 400px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

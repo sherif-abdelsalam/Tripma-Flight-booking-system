@@ -1,0 +1,73 @@
+.fligts-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.title {
+  font-size: 20px;
+  color: #6e7491;
+  font-weight: 700;
+}
+
+.title span {
+  color: #605dec;
+}
+
+.flights-table-container {
+  height: 450px;
+  padding: 20px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  border: 1px solid #e9e9e9;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.flights-table-container::-webkit-scrollbar {
+  display: none;
+}
+
+.flights-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 10px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.flights-table td {
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid #e9e9e9;
+}
+.flight-row span {
+  color: #7c8db0;
+}
+.flight-row {
+  cursor: pointer; /* Change cursor to pointer */
+  transition: background-color 0.2s ease;
+}
+
+.flight-row:hover {
+  background-color: #f9f9f9; /* Highlight on hover */
+}
+
+.flight-row.selected {
+  background-color: #d1e7ff; /* Light blue background for selected row */
+  font-weight: bold; /* Optional: Make the row text bold */
+  color: #0d6efd; /* Optional: Change text color */
+}
+
+.flight-cion {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.flight-logo {
+  display: flex;
+  gap: 20px;
+}

@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "title": "Shanghai, China",
+    "description": "An international city rich in culture",
+    "price": "$598",
+    "imageUrl": "The-Bund-Shanghai.jpg"
+  },
+
+  {
+    "id": 2,
+    "title": "Nairobi, Kenya",
+    "description": "Dubbed the Safari Capital of the World.",
+    "price": "$1,248",
+    "imageUrl": "Tsavo-East-National-Park.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Seoul, South Korea",
+    "description": "This modern city is a traveler’s dream",
+    "price": "$589",
+    "imageUrl": "seoul-south-korea.jpg"
+  }
+]

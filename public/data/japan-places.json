@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Hotel Kaneyamaen and Bessho SASA",
+    "description": "Located at the base of Mount Fuji, Hotel Kaneyamaen is a traditional Japanese ryokan with a modern twist. Enjoy a private onsen bath and a private multi-course kaiseki dinner.",
+    "imageUrl": "kaneyamaen-and-bessho.jpg"
+  },
+  {
+    "id": 2,
+    "title": "HOTEL THE FLAG 大阪市",
+    "description": "Make a stop in Osaka and stay at HOTEL THE FLAG, just a few minutes walk to experience the food culture surrounding Dontonbori. Just one minute away is the Shinsaibashi shopping street.",
+    "imageUrl": "hotel-the-flag.jpg"
+  },
+  {
+    "id": 3,
+    "title": "9 Hours Shinjuku",
+    "description": "Experience a truly unique stay in an authentic Japanese capsule hotel. 9 Hours Shinjuku is minutes from one of Japan's busiest train stations. Just take the NEX train from Narita airport!",
+    "imageUrl": "hours-shinjuku.jpg"
+  }
+]

@@ -1,0 +1,25 @@
+.cards-title {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.cards-title-no-arrow {
+  display: flex;
+  justify-content: center;
+}
+.all-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.cards-title p,
+.cards-title-no-arrow p {
+  font-size: 24px;
+  color: #6e7491;
+  font-weight: 700;
+}
+.cards-title span,
+.cards-title-no-arrow span {
+  color: #605dec;
+}

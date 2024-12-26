@@ -1,12 +1,11 @@
-import Footer from "@/components/Footer/footer";
-import "../globals.css";
-import Header from "@/components/Header/header";
+import { PassengerProvider } from "./context/passengersContext";
+import "./globals.css";
 import { Nunito_Sans } from "next/font/google";
 
 const nunitoSans = Nunito_Sans({
   subsets: ["latin"],
   variable: "--font-nunito-sans",
-  weight: ["200", "400", "300", "400", "500", "600", "700", "800", "900"],
+  weight: ["200", "300", "400", "500", "600", "700", "800", "900"],
   style: ["normal", "italic"],
 });
 
@@ -16,14 +15,11 @@ export const metadata = {
     "Tripma is a travel agency that helps you find the best deals on flights, hotels, and packages.",
 };
 
-export default function RootLayout({ children, modal }) {
+export default function RootLayout({ children }) {
   return (
     <html lang="en" className={nunitoSans.className}>
       <body>
-        <Header />
-        {modal}
-        {children}
-        <Footer />
+        <PassengerProvider>{children}</PassengerProvider>
       </body>
     </html>
   );

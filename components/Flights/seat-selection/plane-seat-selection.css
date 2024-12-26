@@ -1,0 +1,24 @@
+.seats-selection {
+  position: relative;
+  width: 94%;
+}
+
+.plane_seat_selection {
+  display: block;
+  height: auto;
+  position: relative;
+  top: -100px;
+  left: -700px;
+  z-index: -1;
+}
+.seats-details {
+  border-left: 1px solid #e0e0e0;
+  backdrop-filter: blur(10px);
+  pointer-events: none;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 50%;
+}

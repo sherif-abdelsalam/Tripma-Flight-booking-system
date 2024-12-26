@@ -1,0 +1,81 @@
+.seats-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  position: absolute;
+  left: 28.64%;
+  top: 50.8%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 8px 4px;
+  border-radius: 8px;
+}
+.seats {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.row-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  font-size: 12px;
+  color: #7c8db0;
+}
+.seat {
+  padding: 10px;
+  background: linear-gradient(45deg, #605dec, #2a26d9);
+  border: none;
+  border-radius: 4px;
+  width: 22px;
+  height: 32px;
+  cursor: pointer;
+}
+.seat.available:hover {
+  background: #13119c;
+}
+
+.seat.reserved {
+  background: linear-gradient(45deg, #eb568c, #ed5e76);
+  position: relative; /* Required for adding the SVG */
+}
+
+.seat.reserved::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 18px;
+  height: 18px;
+  background-image: url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.72754 8.75732L7.4849 12.5147L14.9996 4.99996' stroke='%23F6F6FE' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-size: contain; /* Scale the SVG to fit */
+  background-repeat: no-repeat; /* Prevent tiling */
+  background-position: center; /* Center the SVG */
+}
+.seat.taken {
+  padding: 10px;
+  background: #e9e8fc;
+  border: none;
+  border-radius: 4px;
+  width: 24px;
+  height: 32px;
+}
+
+.exit-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 8px 0;
+}
+.exit-row p {
+  font-size: 14px;
+  color: #7c8db0;
+}

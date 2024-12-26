@@ -1,0 +1,185 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 32px;
+  height: 100px;
+  background-color: #27273f;
+  border-bottom: 1px solid #e0e0e0;
+}
+.route-info {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  color: #fafafa;
+  font-size: 24px;
+  font-weight: 800;
+  width: 40%;
+}
+.route-info .desc {
+  font-size: 18px;
+  font-weight: 400;
+}
+.route {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.route span {
+  font-size: 18px;
+  font-weight: 400;
+  color: #6e7491;
+}
+.line-divider {
+  width: 2px;
+  height: 100%;
+  background-color: #6e7491;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fafafa;
+  font-size: 18px;
+  width: 30%;
+}
+
+.type {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.class-options {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 32px 48px;
+}
+
+.class-info {
+  margin: 32px 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.class-type {
+  font-size: 18px;
+  font-weight: 700;
+  color: #6e7491;
+}
+
+.class-desc {
+  font-size: 16px;
+  font-weight: 400;
+  color: #6e7491;
+}
+.class-options-divider-economy {
+  width: 30px;
+  height: 3px;
+  background-color: #605dec;
+}
+
+.class-options-divider-business {
+  width: 30px;
+  height: 3px;
+  background-color: #5cd6c0;
+}
+.economy-class-options {
+  list-style: none !important;
+  padding: 0;
+  margin-left: 16px;
+}
+.economy-class-options li {
+  font-weight: 500 !important;
+  color: #6e7491 !important;
+  font-size: 16px !important;
+  background-image: url("/images/avail-economy.svg"); /* Replace with your correct path */
+  background-repeat: no-repeat;
+  background-position: left center; /* Align the image to the left */
+  padding-left: 32px; /* Add space to the left of the text */
+  margin: 10px 0; /* Space between list items */
+}
+
+.business-class-options {
+  list-style: none !important;
+  padding: 0;
+  margin-left: 16px;
+}
+
+.business-class-options li {
+  font-weight: 500 !important;
+  color: #6e7491 !important;
+  font-size: 16px !important;
+  background-image: url("/images/avail-business.svg"); /* Replace with your correct path */
+  background-repeat: no-repeat;
+  background-position: left center; /* Align the image to the left */
+  padding-left: 32px; /* Add space to the left of the text */
+  margin: 10px 0; /* Space between list items */
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0 !important;
+  padding: 0 32px;
+  height: 120px;
+  background-color: #fafafe;
+  border-top: 1px solid #e0e0e0;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.seat-info {
+  font-size: 16px;
+  font-weight: 500;
+  color: #6e7491;
+}
+.seat-info {
+  width: 40%;
+
+  display: flex;
+  justify-content: space-between;
+}
+.seat-passenger-info,
+.seat-number {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 500;
+  color: #6e7491;
+  gap: 8px;
+}
+.actions-buttons {
+  display: flex;
+  gap: 20px;
+  margin: 0 auto;
+}
+.save-close,
+.next-flight {
+  text-decoration: none;
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px 16px;
+  border: #605dec solid 1px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.save-close {
+  color: #605dec;
+}
+.next-flight {
+  color: #fff;
+  background-color: #605dec;
+}
+.passenger-name,
+.passenger-seat {
+  font-size: 18px;
+  font-weight: 500;
+  color: #6e7491;
+}

@@ -1,0 +1,75 @@
+.seats-container-business {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+  position: absolute;
+  left: 28.64%;
+  top: 22.5%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 12px;
+  border-radius: 8px;
+}
+.seats-business {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.row-business {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.row-number-business {
+  margin: 0 4px;
+}
+.seat-business {
+  padding: 10px;
+  background: linear-gradient(45deg, #5cd6c0, #22c3a6);
+  border: none;
+  border-radius: 4px;
+  width: 30px;
+  height: 40px;
+  cursor: pointer;
+}
+.seat-business.available:hover {
+  background: #179981;
+}
+.seat-business.reserved {
+  background: linear-gradient(45deg, #eb568c, #ed5e76);
+  border: none;
+  position: relative; /* Required for adding the SVG */
+}
+
+.seat-business.reserved::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 18px;
+  height: 18px;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.72754 8.75732L7.4849 12.5147L14.9996 4.99996' stroke='%23F6F6FE' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-size: contain; /* Scale the SVG to fit */
+  background-repeat: no-repeat; /* Prevent tiling */
+  background-position: center; /* Center the SVG */
+}
+
+.seat-business.taken {
+  padding: 10px;
+  background: #e9e8fc;
+  border: none;
+  border-radius: 4px;
+  width: 30px;
+  height: 40px;
+}
+.row-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 !important;
+  width: 16px;
+  font-size: 14px;
+  color: #7c8db0;
+}

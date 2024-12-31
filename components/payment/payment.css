@@ -1,0 +1,152 @@
+.payment-form {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+.payment-header {
+  display: flex;
+  flex-direction: column;
+}
+.payment-header h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #605dec;
+}
+
+.payment-header p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #7c8db0;
+}
+.payment-methods {
+  display: flex;
+  gap: 8px;
+  margin-top: 20px;
+  border: #605dec solid 1px;
+  align-self: self-start;
+  border-radius: 4px;
+}
+.payment-methods button {
+  display: inline-block;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 400;
+  color: #605dec;
+  padding: 6px 8px;
+}
+
+.credit-card {
+  color: #fff;
+  background: #605dec;
+}
+
+.credit-card button {
+  color: #fff;
+}
+.pay {
+  padding: 6px 20px;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.credit-card-details {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 500px;
+  font-family: "Arial", sans-serif;
+}
+
+.credit-card-details h3 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.credit-card-details input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.credit-card-details input:focus {
+  border-color: #605dec;
+  box-shadow: 0 0 4px rgba(96, 93, 236, 0.2);
+}
+
+.expiry-cvv {
+  display: flex;
+  justify-content: space-between;
+}
+
+.expiry-date {
+  z-index: 3;
+}
+
+.expiry-date:focus {
+  border-color: #605dec; /* Match input focus color */
+  box-shadow: 0 0 4px rgba(96, 93, 236, 0.2); /* Subtle glow */
+}
+.credit-card-details h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #7c8db0;
+  margin-bottom: 12px;
+}
+.policy {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 60px;
+}
+
+.policy h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #7c8db0;
+}
+
+.policy p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #7c8db0;
+}
+
+.payment-btns {
+  margin: 60px 0;
+  display: flex;
+  gap: 16px;
+}
+.payment-btns button {
+  padding: 12px 24px;
+  border: none;
+  background: none;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+}
+.payment-btns .back-btn {
+  border: 1px solid #605dec;
+  color: #605dec;
+}
+.payment-btns .sub-btn {
+  background: #605dec;
+  color: #fff;
+}
+.in-active-btn {
+  background: #ccc !important;
+  color: #fff;
+  cursor: not-allowed !important;
+}

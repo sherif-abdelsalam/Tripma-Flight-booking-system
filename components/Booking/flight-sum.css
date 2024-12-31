@@ -1,0 +1,26 @@
+.flight-summary-container {
+  width: 60%;
+  display: flex;
+  padding: 24px;
+  justify-content: space-between;
+  border: #7c8db0 1px solid;
+  border-radius: 8px;
+}
+
+.flight-summary-container .flight-logo {
+  display: flex;
+  gap: 8px;
+}
+
+.flight-summary-container span {
+  color: #7c8db0;
+}
+.dep-arrival-date {
+  font-size: 18px;
+  font-weight: 600;
+  color: #6e7491;
+}
+.seat-class {
+  font-size: 16px;
+  color: #7c8db0;
+}
